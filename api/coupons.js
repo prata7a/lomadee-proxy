@@ -4,7 +4,7 @@ export default async function handler(req, res) {
 
   try {
     const lomadeeRes = await fetch(
-      `https://api.lomadee.com/v3/${API_KEY}/coupon/_all?sourceId=${SOURCE_ID}`
+      `https://lomadee-proxy-9zot.vercel.app/api/coupons`
     );
 
     if (!lomadeeRes.ok) {
