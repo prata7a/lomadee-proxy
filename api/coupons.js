@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
-  const API_KEY = "HpV0rIXRuTIhta7k0MPZAqLkO14Q9Vsr"; // sua API Key da Lomadee
-  const SOURCE_ID = "9125b777-4886-40e7-a874-86e2471ca3a7"; // ID do canal (correto)
+  const API_KEY = process.env.API_KEY; // pega da variável de ambiente
+  const SOURCE_ID = process.env.SOURCE_ID; // pega da variável de ambiente
 
   try {
     const lomadeeRes = await fetch(
